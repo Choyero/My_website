@@ -17,17 +17,23 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 
 html {
   font-size: 62.5%;
-
+  
   @media (max-width: 1100px) {
     font-size: 40%;
   }
-    @media (max-width: 630px) {
+  @media (max-width: 630px) {
     font-size: 35%;
   }
+  @media (max-width: 450px) {
+    font-size: 28%;
+  }
+
+
 
 
 }

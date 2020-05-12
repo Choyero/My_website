@@ -9,15 +9,15 @@
         <div class="navigation-main">
             <div class="navigation-main__icon-box">
                 <img class="navigation-main__icon" src="../../public/images/interface.svg" alt="">
-                <h3 class="navigation__text">
+                <h3 class="navigation-main__text">
                     Tim Gow
                 </h3>
             </div>
 
             <div class="link-box">
-                <a href="" class="navigation-main__link">Projects</a>
-                <a href="" class="navigation-main__link">About</a>
-                <a href="" class="navigation-main__link">Contact</a>
+                <a href="#projects-section" class="navigation-main__link">Projects</a>
+                <a href="#about-me-section" class="navigation-main__link">About</a>
+                <a href="#contact-section" class="navigation-main__link">Contact</a>
                 <a href=""><img class="navigation-main__icon" src="../../public/images/github.svg" alt=""></a>
                 <a href=""><img class="navigation-main__icon" src="../../public/images/in.svg" alt=""></a>
             </div>
@@ -33,7 +33,7 @@
             </div>
 
             <h1></h1>
-            <input type="checkbox" class="navigation__checkbox" id=navi-toggle>
+            <input type="checkbox" v-model="checked" class="navigation__checkbox" id=navi-toggle>
 
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
@@ -42,10 +42,10 @@
             <div class="navigation__background">&nbsp;</div>
 
             <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Projects</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Contact</a></li>
+                <ul class="navigation__list" @click="closeNav">
+                    <li class="navigation__item"><a href="#projects-section" class="navigation__link"><span>01</span>Projects</a></li>
+                    <li class="navigation__item"><a href="#about-me-section" class="navigation__link"><span>02</span>About</a></li>
+                    <li class="navigation__item"><a href="#contact-section" class="navigation__link"><span>03</span>Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,20 +58,16 @@
             
 
             <p class="header__text baffleText" > 
-            <span class="header__letter">H</span>
-            <span class="header__letter">E</span>
-            <span class="header__letter">L</span>
-            <span class="header__letter">L</span>
-            <span class="header__letter">O</span>, my name is Tim. I am a Fullstack Developer</p>
-            
+            Hello, I'm Tim. I am a fullStack developer</p>
+            <div class="header__btn">
+                <a href="#projects-section" class="header__link">View Portfolio
+                    <svg class="header__arrow">
+                        <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <div class="header__btn">
-            <a href="" class="header__link">View Portfolio
-                <svg class="header__arrow">
-                    <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
-                </svg>
-            </a>
-        </div>
+
     </div>
 </template>
 
@@ -89,7 +85,8 @@ export default {
             HeadAnimation: false,
             isSmall: false,
             showNavbar: true,
-            lastScrollPosition: 0
+            lastScrollPosition: 0,
+            checked: false
         }
     },
     mounted () {
@@ -116,6 +113,10 @@ export default {
             this.lastScrollPosition = currentScrollPosition;
         },
 
+        closeNav() {
+            this.checked = !this.checked;
+        },
+
         randomGen(length) {
             let arr = new Uint16Array(length);
             window.crypto.getRandomValues(arr);
@@ -129,9 +130,9 @@ export default {
         obscureText() {
             let b = baffle('.baffleText', {
                 characters: this.randomGen(15),
-                speed: 50
+                speed: 70
                 });
-                b.reveal(1000);
+                b.reveal(1500);
             }
             
     },
@@ -154,31 +155,22 @@ export default {
 
     &__hello-box {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding-top: 46vh;
-        padding-left: 6rem;
-        padding-right: 6rem;
+        margin: 0 0;
         color:#2196f3;
 
     }
 
-
-
-
     &__text {
-        box-sizing: inherit;
-        white-space: pre-wrap;
-        padding: 0 .8rem;
-        border-left: .4rem solid #fff;
-        border-right: .4rem solid #fff;
+        width: 39%;
     }
 
+
     &__btn {
-        position: absolute;
-        top: 70vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 4%;
         padding: .6rem 0;
         border: .4rem solid #fff;
         display: inline-block;
@@ -251,7 +243,7 @@ export default {
 .navigation-main {
     display: flex;
     justify-content: space-between;
-    padding-top: 4vh;
+    padding-top: 8rem;
     font-size: 2rem;
 
     &__icon-box {
@@ -302,7 +294,7 @@ export default {
 
 //Navigation 
 
-@media screen and (max-width: 760px) {
+@media (max-width: 760px) {
     .navigation-main {
         display: none;
     }
@@ -314,12 +306,14 @@ export default {
         .navigation-main__icon-box {
             position: fixed;
             top: 6rem;
-            left: 6rem;
+            left: 1%;
+            margin: 0 0;
         }
 
-        display: block;
+        display: inline-block;
    &__checkbox {
     display: none;
+
    } 
 
    &__button {
@@ -328,7 +322,7 @@ export default {
     width: 7rem;
     position: fixed;
     top: 6rem;
-    right: 6rem;
+    right: 3%;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(#000, .1);
@@ -343,7 +337,7 @@ export default {
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
-    right: 6.5rem;
+    right: 3.5%;
     background-image: radial-gradient(#2d3436, #2196f3 );
     z-index: 1000;
     transition: transform .8s cubic-bezier(.86, 0, .07, 1);

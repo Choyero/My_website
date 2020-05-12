@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div class="content" id="about-me-section">
         <div class="about-Tim" data-aos="fade-right" data-aos-offset="120" data-aos-duration="120" data-aos-delay="50">
             <figure class="about-Tim__shape">
                 <img src="../../public/images/portfolio_img.jpg" alt="Portfolio Picture" class="about-Tim__img">
@@ -116,7 +116,7 @@ export default {
     
     @media (max-width: 730px) {
         padding-left: 0;
-        max-width: 95%;
+        width: 95%;
     }
 
 

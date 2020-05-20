@@ -3,7 +3,7 @@
         <div class="popup" id="popup">
             <div class="popup__content">
                 <a href="#section-projects" class="popup__close">&times;</a>
-                {{img}}
+                
                 <div class="popup__video-box">
                     <img class="popup__project-video" :src="require(`../../public/images/${url}.gif`)" alt="">
                     <div class="popup__link-container">

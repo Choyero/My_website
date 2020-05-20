@@ -3,11 +3,14 @@
         <div class="projects-container">
             <div class="projects" data-aos="fade-right">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp_img2.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project1.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 1
+                        Natours
+                        <br>
+                        <br>
+                        HTML5 | SASS
                     <div class="projects__btn">
-                        <a href="#popup" class="projects__link" @click="select('p1', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                        <a href="#popup" class="projects__link" @click="select('p1', 'http://natours.timothyjgow.com/', 'https://github.com/Choyero/Natours.git')">View Project
                             <svg class="projects__arrow">
                                 <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                             </svg>
@@ -19,9 +22,12 @@
 
             <div class="projects" data-aos="fade-left">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp_img3.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project2.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 2
+                        Web Pantry
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | VUE JS
                         <div class="projects__btn">
                             <a href="#popup" class="projects__link" @click="select('p2', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
                                 <svg class="projects__arrow">
@@ -35,11 +41,14 @@
 
             <div class="projects" data-aos="fade-right">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp1_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project3.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 3
+                        Guitar Guys
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | Bootstrap 4
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p3', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p3', 'http://guitarguys.timothyjgow.com/', 'https://github.com/Choyero/Guitar-guys.git')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -52,11 +61,14 @@
 
             <div class="projects" data-aos="fade-left">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp2_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project4.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 4
+                        Web Pantry 2.0
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | VUE JS | NODE JS
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p4', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p4', 'http://webpantry2.timothyjgow.com/', 'https://github.com/Choyero/CalTracker.git')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -69,11 +81,14 @@
 
             <div class="projects" data-aos="fade-right">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp3_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project5.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 5
+                        Trillo
+                        <br>
+                        <br>
+                        HTML5 | SASS
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p5', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p5', 'http://trillo.timothyjgow.com/', 'https://github.com/Choyero/Trillo.git')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -87,11 +102,14 @@
 
             <div class="projects" data-aos="fade-left">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp4_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project6.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 6
+                        Star Wars Language Translator
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | JavaScript
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p6', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p6', 'http://swtranslate.timothyjgow.com/', 'https://github.com/Choyero/creative-project-2.git')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -104,11 +122,14 @@
 
             <div class="projects" data-aos="fade-right">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp5_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project7.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 7
+                        Easy Weather Results
+                        <br>
+                        <br>
+                        HTML5 | CSS3 | JavaScript
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p7', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p7', 'http://weather.timothyjgow.com/', 'https://github.com/Choyero')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -121,11 +142,14 @@
 
             <div class="projects" data-aos="fade-left">
                 <figure class="projects__shape">
-                    <img src="../../public/images/temp6_img.jpg" alt="Project img" class="projects__img">
+                    <img src="../../public/images/project8.jpg" alt="Project img" class="projects__img">
                     <figcaption class="projects__caption">
-                        Project 8
+                        Tim's Portfolio
+                        <br>
+                        <br>
+                        HTML5 | SASS | VUE JS
                         <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p8', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
+                            <a href="#popup" class="projects__link" @click="select('p8', 'http://timothyjgow.com/', 'https://github.com/Choyero/My_website.git')">View Project
                                 <svg class="projects__arrow">
                                     <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
                                 </svg>
@@ -135,39 +159,6 @@
                 </figure>
             </div>
 
-
-            <div class="projects" data-aos="fade-right">
-                <figure class="projects__shape">
-                    <img src="../../public/images/temp7_img.jpg" alt="Project img" class="projects__img">
-                    <figcaption class="projects__caption">
-                        Project 9
-                        <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p9', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
-                                <svg class="projects__arrow">
-                                    <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-
-
-            <div class="projects" data-aos="fade-left">
-                <figure class="projects__shape">
-                    <img src="../../public/images/temp8_img.jpg" alt="Project img" class="projects__img">
-                    <figcaption class="projects__caption">
-                        Project 10
-                        <div class="projects__btn">
-                            <a href="#popup" class="projects__link" @click="select('p10', 'http://webpantry.timothyjgow.com/', 'https://github.com/Choyero/webpantry')">View Project
-                                <svg class="projects__arrow">
-                                    <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
 
 
         </div>
@@ -182,7 +173,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init({
-    offset: 200,
+    offset: 300,
     delay: 0,
     duration: 500,
     easing: 'ease',
@@ -222,7 +213,7 @@ export default {
     &__shape {
         background: #000;
         width: 100%;
-        height: 30rem;
+        height: 50rem;
 
     }
 

@@ -18,8 +18,8 @@
                 <a href="#projects-section" class="navigation-main__link">Projects</a>
                 <a href="#about-me-section" class="navigation-main__link">About</a>
                 <a href="#contact-section" class="navigation-main__link">Contact</a>
-                <a href=""><img class="navigation-main__icon" src="../../public/images/github.svg" alt=""></a>
-                <a href=""><img class="navigation-main__icon" src="../../public/images/in.svg" alt=""></a>
+                <a href="https://github.com/Choyero/"><img class="navigation-main__icon" src="../../public/images/github.svg" alt=""></a>
+                <a href="https://linkedin.com/in/tim-gow"><img class="navigation-main__icon" src="../../public/images/in.svg" alt=""></a>
             </div>
         </div>
 

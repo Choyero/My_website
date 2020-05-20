@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div class="logos">
-            <a href="#" class="logos__link">
+            <a href="https://github.com/Choyero/" class="logos__link">
                 <img class="logos__img" src="../../public/images/github.svg" alt="">
             </a>
-            <a href="#" class="logos__link">
+            <a href="https://linkedin.com/in/tim-gow" class="logos__link">
                 <img class="logos__img" src="../../public/images/in.svg" alt="">
             </a>
         </div>

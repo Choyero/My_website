@@ -28,7 +28,12 @@
 
     <Projects />
 
-    
+
+    <h1 class="section-name" id="projects2">Embedded Systems Projects</h1>
+
+    <div class="link-container">
+      <p class="project-link"><a href="../../images/project1.pdf" download="fileName.pdf">Stop Light IOT Device</a></p>
+    </div>
 
 
     <Contact />
@@ -89,6 +94,24 @@ export default {
   text-transform: uppercase;
 }
 
+#projects2 {
+  margin-top: 10rem;
+}
+
+.project-link {
+  font-size: 3rem;
+  text-align: left;
+  
+}
+
+.project-link a {
+ 
+  color: #000;
+}
+
+.link-container {
+  padding: 0 10%;
+}
 
 
 

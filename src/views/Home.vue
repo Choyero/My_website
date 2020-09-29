@@ -31,8 +31,13 @@
 
     <h1 class="section-name" id="projects2">Embedded Systems Projects</h1>
 
+    <div class="container-projects">
+      <div class="link-container">
+      <p class="project-link"><a href="../../images/project1.pdf" download="trafficLightPI.pdf">Stop Light IOT Device Raspberry Pi</a></p>
+    </div>
     <div class="link-container">
-      <p class="project-link"><a href="../../images/project1.pdf" download="fileName.pdf">Stop Light IOT Device</a></p>
+      <p class="project-link"><a href="../../images/Lab2-IT&C441.pdf" download="trafficLightWemos.pdf">Stop Light IOT Device Arduino Wemos D1 Mini</a></p>
+    </div>
     </div>
 
 
@@ -109,8 +114,13 @@ export default {
   color: #000;
 }
 
+.container-projects {
+  display: flex;
+}
+
 .link-container {
   padding: 0 10%;
+  margin: 5rem 0;
 }
 
 

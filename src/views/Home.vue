@@ -38,6 +38,10 @@
     <div class="link-container">
       <p class="project-link"><a href="../../images/Lab2-IT&C441.pdf" download="trafficLightWemos.pdf">Stop Light IOT Device Arduino Wemos D1 Mini</a></p>
     </div>
+    <div class="link-container">
+      <p class="project-link"><a href="../../images/Lab3_IT441.pdf" download="DistanceIndicator.pdf">Arduino Distance Indicator</a></p>
+    </div>
+
     </div>
 
 

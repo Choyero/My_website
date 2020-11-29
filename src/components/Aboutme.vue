@@ -19,7 +19,7 @@
                     <h4>Front-End</h4>
                     <ul>
                         <li>HTML5</li>
-                        <li>CSS3 | SASS</li>
+                        <li>CSS3 | SASS | Bootstrap</li>
                         <li>JavaScript</li>
                         <li>VUE JS</li>
                     </ul>
@@ -42,8 +42,7 @@
                     <ul>
                         <li>Routing & Switching</li>
                         <li>Scripting</li>
-                        <li>Tech Support</li>
-                        <li>Security</li>
+                        <li>Embedded Systems</li>
                     </ul>
                 </div>
 
@@ -53,8 +52,7 @@
             <div class="skills__text-box">
                 <h4>Who am I?</h4>
                 <p class="skills__text">
-                    I'm a student in the Information Technology Program at Brigham Young University.
-                    Web development, networking, UI design, and data analysis with Python are my passions.
+                    I'm a Full Stack Developer who enjoys learning new technologies, tinkering with embedded systems, and working on web apps.
                 </p>
             </div>
 

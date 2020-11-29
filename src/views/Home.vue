@@ -22,14 +22,78 @@
       <path fill="#2d3436" fill-opacity="1" d="M0,128L1440,256L1440,0L0,0Z"></path>
     </svg>
 
-    <h1 class="section-name" id="projects-section">Projects</h1>
+    <h1 class="section-name" id="projects-section">Professional Projects</h1>
 
-   
+    <div class="prof_project">
+      <div class="prof_project__card" data-aos="fade-left">
+        <img src="../../public/images/professional/cannon.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://cannonreservations.byu.edu/#/" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="prof_project__card" data-aos="fade-right">
+        <img src="../../public/images/professional/christmas.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://christmas2020.byu.edu" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="prof_project__card" data-aos="fade-left">
+        <img src="../../public/images/professional/dining.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://dining.byu.edu" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="prof_project__card" data-aos="fade-right">
+        <img src="../../public/images/professional/des.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://des.byu.edu" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="prof_project__card" data-aos="fade-left">
+        <img src="../../public/images/professional/creamery.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://creamery.byu.edu" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="prof_project__card" data-aos="fade-right">
+        <img src="../../public/images/professional/cougartails.jpg" alt="">
+          <div class="projects__btn">
+            <a href="https://cougartails.byu.edu" class="projects__link">Visit Site
+              <svg class="projects__arrow">
+                <use xlink:href="../../public/images/sprite.svg#icon-arrow-long-right"></use>
+              </svg>
+            </a>
+          </div>
+      </div>
+      
+    </div>
+
+    <h1 class="section-name" id="projects-section">Personal Projects</h1>
 
     <Projects />
 
 
-    <h1 class="section-name" id="projects2">Embedded Systems Projects</h1>
+    <!-- <h1 class="section-name" id="projects2">Embedded Systems Projects</h1>
 
     <div class="container-projects">
       <div class="link-container">
@@ -45,7 +109,7 @@
       <p class="project-link"><a href="../../images/lab4_report.pdf" download="multiagentdoorsensor.pdf">Multi-Agent MQTT Project</a></p>
     </div>
 
-    </div>
+    </div> -->
 
 
     <Contact />
@@ -70,6 +134,17 @@ import Projects from '@/components/Projects.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
 import Popup from '@/components/Popup.vue'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    offset: 300,
+    delay: 0,
+    duration: 500,
+    easing: 'ease',
+    once: false,
+    mirror: false
+});
 
 
 export default {
@@ -130,7 +205,75 @@ export default {
   margin: 5rem 0;
 }
 
+.prof_project {
+  width: 80%;
+  margin: 15rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: center;
+  &__card {
+    margin: 2rem 1rem;
+  }
+  &__card img{
+    width: auto;
+    height: 40rem;
+  }
+}
 
+
+.projects__btn {
+        
+        margin-top: 1.2rem;
+        padding: 0 0;
+        border: .4rem solid #000;
+        display: block;
+        width: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+        transition: all .4s;
+        color: #2196f3;
+        &:hover .projects__link .projects__arrow {
+            fill:#000;
+            transform: scale(1.1);
+        }
+
+        &:hover .header__link {
+            color: #000;
+        }
+
+        &:hover {
+            border-color: #2196f3;
+        }
+    }
+
+    .projects__link {
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 2rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all .2s;
+            position: relative;
+            color: #2196f3;
+            font-size: 2.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all .4s;
+            }
+        }
+
+        .projects__arrow {
+            height: 2rem;
+            width: 2rem;
+            fill:#2196f3;
+            backface-visibility: hidden;
+            transform: scale(1);
+            transition: all .4s;
+        }
 
 
 </style>
